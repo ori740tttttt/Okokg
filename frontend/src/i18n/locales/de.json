@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "map": "Karte",
+    "apartment": "Wohnung",
+    "itinerary": "KI-Reiseplan",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "dashboard": "Dashboard"
+  },
+  "language": {
+    "select": "Sprache"
+  },
+  "hero": {
+    "kicker": "Trappeto · Sizilien",
+    "title_line1": "Wohnung",
+    "title_line2": "Matteo",
+    "subtitle": "Ihr Zuhause zwischen Meer und Hügeln. Ein authentischer Aufenthalt im Herzen der nordwestsizilianischen Küste."
+  },
+  "booking": {
+    "title": "Verfügbarkeit prüfen",
+    "subtitle": "Wählen Sie Ihre Daten hier oder im Kalender",
+    "from": "ab",
+    "per_night": "/Nacht",
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "guests": "Gäste",
+    "guest_one": "Gast",
+    "guest_other": "Gäste",
+    "discount_code": "Rabattcode",
+    "optional": "Optional",
+    "ac": "Klimaanlage",
+    "n_nights": "{{n}} Nächte × Durchschnittspreis",
+    "extra_guests": "Zusätzliche Gäste",
+    "cleaning": "Endreinigung",
+    "tourist_tax": "Kurtaxe",
+    "per_night_short": "/Nacht",
+    "per_stay": "Aufenthalt",
+    "discount_label": "Rabatt ({{code}} -{{percent}}%)",
+    "site_total": "Gesamtpreis Website",
+    "same_stay_booking": "Gleicher Aufenthalt auf Booking.com:",
+    "see_on_booking": "Auf Booking ansehen",
+    "save_here": "Sparen Sie {{amount}}, wenn Sie hier buchen",
+    "name_placeholder": "Vor- und Nachname",
+    "email_placeholder": "E-Mail",
+    "phone_placeholder": "Telefon (erforderlich)",
+    "message_placeholder": "Anmerkungen (optional)",
+    "submit": "Buchungsanfrage senden",
+    "sending": "Wird gesendet…",
+    "toast_select_dates": "Wählen Sie die Daten im Kalender aus",
+    "toast_need_name_email": "Bitte Name und E-Mail eingeben",
+    "toast_need_phone": "Bitte eine Telefonnummer eingeben",
+    "toast_sent": "Anfrage gesendet! Sie erhalten eine Bestätigung per E-Mail.",
+    "toast_error": "Fehler beim Senden",
+    "toast_date_blocked": "Dieses Datum ist nicht verfügbar",
+    "toast_select_checkin_first": "Wählen Sie zuerst das Anreisedatum",
+    "toast_checkout_after": "Die Abreise muss nach der Anreise liegen",
+    "toast_range_blocked": "Einige Tage im gewählten Zeitraum sind nicht verfügbar",
+    "confirm_send": "Bestätigen und Anfrage senden",
+    "back": "Zurück"
+  },
+  "calendar": {
+    "kicker": "Kalender",
+    "title": "Verfügbarkeit",
+    "help": "Klicken Sie auf zwei Daten, um einen Zeitraum auszuwählen. Die Tagespreise werden unter jedem Tag angezeigt.",
+    "available": "Verfügbar",
+    "booked": "Belegt",
+    "selected": "Ausgewählt",
+    "not_available": "Nicht verfügbar",
+    "weekdays": [
+      "M",
+      "D",
+      "M",
+      "D",
+      "F",
+      "S",
+      "S"
+    ]
+  },
+  "property": {
+    "kicker": "Die Wohnung",
+    "title": "Das Haus Ihrer sizilianischen Träume",
+    "services": "Inklusive Leistungen",
+    "feature_rooms": "Schlafzimmer",
+    "feature_bathrooms": "Badezimmer",
+    "feature_kitchen": "Küchen",
+    "feature_living": "Wohnzimmer",
+    "feature_max_guests": "Max. Gäste"
+  },
+  "map_cta": {
+    "kicker": "Interaktive Karte",
+    "title": "Entdecken Sie die Schönheiten von Palermo und Trapani",
+    "subtitle": "Über 50 ausgewählte Attraktionen: Kunst und Kultur, Traumstrände, Natur und unvergessliche Panoramen.",
+    "open": "Karte öffnen →"
+  },
+  "map_page": {
+    "kicker": "Erkunden",
+    "title": "Karte der Schönheiten",
+    "subtitle": "Alle Attraktionen der Provinzen Palermo und Trapani, ausgewählt für die Gäste der Wohnung Matteo. Klicken Sie auf die Pins, um eine Wegbeschreibung zu erhalten.",
+    "back_home": "Zurück zum Haus",
+    "search_placeholder": "Attraktion oder Ort suchen…",
+    "no_results": "Keine Ergebnisse",
+    "directions": "→ Wegbeschreibung",
+    "house_popup_title": "Wohnung Matteo",
+    "categories": {
+      "art": "Kunst und Kultur",
+      "beach": "Strände",
+      "nature": "Natur und Panoramen"
+    },
+    "locked_marker_title": "Gesperrte Attraktion",
+    "locked_marker_hint": "Mit dem Code freischalten, um Name und Details zu sehen",
+    "unlock_title": "Schalten Sie die Namen der Attraktionen frei",
+    "unlock_description": "Die Karte ist frei: Erkunden Sie alle Sehenswürdigkeiten der Region. Geben Sie Ihren Bestätigungscode ein, um die Namen, Details und Wegbeschreibungen jeder Attraktion sowie die personalisierte KI-Reiseroute freizuschalten.",
+    "subtitle_free": "Erkunden Sie frei alle Punkte der Region. Schalten Sie Namen und Details mit dem Code frei, den Sie nach der Buchung erhalten.",
+    "add_to_itinerary": "Zu meiner Reiseroute hinzufügen",
+    "in_itinerary": "In der Reiseroute",
+    "remove": "Entfernen",
+    "my_itinerary": "Meine Reiseroute",
+    "itinerary_count": "Attraktionen",
+    "itinerary_empty": "Tippen Sie auf einen Punkt auf der Karte und fügen Sie ihn hier hinzu, um Ihre Reiseroute zu erstellen.",
+    "download_pdf": "PDF herunterladen",
+    "clear": "Leeren",
+    "traveler_name_ph": "Ihr Name (für das PDF)",
+    "price": "Preis",
+    "hours": "Öffnungszeiten",
+    "duration": "Dauer",
+    "discount": "Ermäßigungen",
+    "tickets": "Tickets",
+    "pdf_error": "Fehler beim Erstellen des PDF",
+    "generating": "Wird erstellt…",
+    "added_toast": "Zu Ihrer Reiseroute hinzugefügt",
+    "build_hint": "Klicken Sie auf die Punkte der Karte, erstellen Sie Ihre Reiseroute und laden Sie sie als PDF herunter."
+  },
+  "ai_itinerary": {
+    "badge": "Exklusives Erlebnis",
+    "title": "Ihr maßgeschneiderter Reiseplan, erstellt von künstlicher Intelligenz",
+    "description": "Sobald Ihre Buchung bestätigt ist, erhalten Sie einen Bestätigungscode. Geben Sie ihn hier ein, um einen personalisierten Reiseplan auf der Grundlage Ihrer Daten, Interessen und Ihres Reisestils zu erstellen – mit lokalen Tipps zu Stränden, typischen Restaurants, Ausflügen und sizilianischen Traditionen.",
+    "locked_hint": "Nur nach Genehmigung des Gastgebers verfügbar",
+    "form_title": "Erstellen Sie Ihren Reiseplan",
+    "code_placeholder": "Bestätigungscode",
+    "interests_placeholder": "Ihre Interessen (z. B. Meer, Essen, Geschichte, Natur)",
+    "style_placeholder": "Reisestil",
+    "style_relax": "Entspannung und Meer",
+    "style_adventure": "Abenteuer und Natur",
+    "style_culture": "Kultur und Geschichte",
+    "style_food": "Gastronomisch",
+    "style_family": "Mit der Familie",
+    "style_romantic": "Romantisch",
+    "generate": "Reiseplan erstellen",
+    "generating": "Wird erstellt…",
+    "missing_code": "Bitte Bestätigungscode eingeben",
+    "default_error": "Fehler beim Erstellen des Reiseplans"
+  },
+  "footer": {
+    "address": "Adresse",
+    "contacts": "Kontakte",
+    "app_social": "App und Social Media",
+    "cir": "CIR:",
+    "cin": "CIN:",
+    "copyright": "© {{year}} Wohnung Matteo — Trappeto (PA)"
+  },
+  "souvenir": {
+    "badge": "Geschenk",
+    "kicker": "Ein Andenken für zu Hause",
+    "title": "Der Trappeto-Souvenir-Schlüsselanhänger",
+    "description": "Eine kleine Erinnerung an Ihren Urlaub: der Schlüsselanhänger aus Kunstleder mit dem Dorf Trappeto und dem QR-Code für die Website.",
+    "gift_note": "Ein Geschenk für alle, die direkt über die Website buchen.",
+    "point1": "Exklusives Appartamento-Matteo-Design",
+    "point2": "QR für Website und KI-Reiseplan",
+    "point3": "Gratis bei Buchung hier, keine Provisionen",
+    "cta": "Auf der Website buchen und erhalten",
+    "widget_text": "Eine kleine Erinnerung an Ihren Urlaub: der Schlüsselanhänger aus Kunstleder mit dem Dorf Trappeto und dem QR-Code für unsere Website + eine digitale Reiseroute, um alle Schönheiten unserer Region zu entdecken!",
+    "itinerary_note": "Sie erhalten außerdem eine personalisierte digitale Reiseroute.",
+    "widget_highlight": "Souvenir-Schlüsselanhänger + digitale Reiseroute"
+  },
+  "map_tutorial": {
+    "badge": "Gästebereich",
+    "dialog_title": "So funktioniert die interaktive Karte",
+    "dialog_subtitle": "Mit deinem Buchungscode schaltest du all das frei:",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "step_aria": "Schritt",
+    "cta": "Karte öffnen",
+    "mock": {
+      "enter_code": "Code eingeben",
+      "unlock": "Freischalten",
+      "unlocked": "Freigeschaltet!"
+    },
+    "steps": {
+      "code": {
+        "title": "Code eingeben",
+        "desc": "Den Code erhältst du per E-Mail nach der Bestätigung deiner Buchung. Einmal eingeben und die ganze Karte ist freigeschaltet."
+      },
+      "details": {
+        "title": "Namen und Details entdecken",
+        "desc": "Jede Attraktion zeigt Name, Öffnungszeiten, Preise, empfohlene Dauer, Gäste-Rabatte sowie Links zu Tickets und Wegbeschreibung."
+      },
+      "itinerary": {
+        "title": "Eigene Route erstellen",
+        "desc": "Füge die gewünschten Orte mit einem Tippen hinzu und stelle deine maßgeschneiderte Reise direkt auf der Karte zusammen."
+      },
+      "pdf": {
+        "title": "PDF herunterladen",
+        "desc": "Exportiere die komplette Route als PDF, bereit zum Mitnehmen – auch offline."
+      }
+    },
+    "button": "Tutorial ansehen"
+  }
+}

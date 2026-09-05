@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "Home",
+    "map": "Map",
+    "apartment": "Apartment",
+    "itinerary": "AI Itinerary",
+    "login": "Login",
+    "logout": "Logout",
+    "dashboard": "Dashboard"
+  },
+  "language": {
+    "select": "Language"
+  },
+  "hero": {
+    "kicker": "Trappeto · Sicily",
+    "title_line1": "Apartment",
+    "title_line2": "Matteo",
+    "subtitle": "Your home between the sea and the hills. An authentic stay in the heart of north-western Sicily."
+  },
+  "booking": {
+    "title": "Check availability",
+    "subtitle": "Pick your dates here or from the calendar",
+    "from": "from",
+    "per_night": "/night",
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "guests": "Guests",
+    "guest_one": "guest",
+    "guest_other": "guests",
+    "discount_code": "Discount code",
+    "optional": "Optional",
+    "ac": "Air conditioning",
+    "n_nights": "{{n}} nights × average price",
+    "extra_guests": "Extra guests",
+    "cleaning": "Final cleaning",
+    "tourist_tax": "Tourist tax",
+    "per_night_short": "/night",
+    "per_stay": "stay",
+    "discount_label": "Discount ({{code}} -{{percent}}%)",
+    "site_total": "Website total",
+    "same_stay_booking": "Same stay on Booking.com:",
+    "see_on_booking": "View on Booking",
+    "save_here": "Save {{amount}} by booking here",
+    "name_placeholder": "Full name",
+    "email_placeholder": "Email",
+    "phone_placeholder": "Phone (required)",
+    "message_placeholder": "Notes (optional)",
+    "submit": "Send booking request",
+    "sending": "Sending…",
+    "toast_select_dates": "Select your dates on the calendar",
+    "toast_need_name_email": "Please enter your name and email",
+    "toast_need_phone": "Please enter a phone number",
+    "toast_sent": "Request sent! You will receive confirmation by email.",
+    "toast_error": "Sending error",
+    "toast_date_blocked": "This date is not available",
+    "toast_select_checkin_first": "Select the arrival date first",
+    "toast_checkout_after": "Check-out must be after check-in",
+    "toast_range_blocked": "Some days in the selected range are not available",
+    "confirm_send": "Confirm and send request",
+    "back": "Back"
+  },
+  "calendar": {
+    "kicker": "Calendar",
+    "title": "Availability",
+    "help": "Click on two dates to select a period. Daily rates are shown under each day.",
+    "available": "Available",
+    "booked": "Booked",
+    "selected": "Selected",
+    "not_available": "Not available",
+    "weekdays": [
+      "M",
+      "T",
+      "W",
+      "T",
+      "F",
+      "S",
+      "S"
+    ]
+  },
+  "property": {
+    "kicker": "The apartment",
+    "title": "The home of your Sicilian dreams",
+    "services": "Included services",
+    "feature_rooms": "Bedrooms",
+    "feature_bathrooms": "Bathrooms",
+    "feature_kitchen": "Kitchens",
+    "feature_living": "Living rooms",
+    "feature_max_guests": "Max guests"
+  },
+  "map_cta": {
+    "kicker": "Interactive map",
+    "title": "Discover the wonders of Palermo and Trapani",
+    "subtitle": "Over 50 curated attractions: art and culture, dreamy beaches, nature and unmissable views.",
+    "open": "Open the map →"
+  },
+  "map_page": {
+    "kicker": "Explore",
+    "title": "Map of wonders",
+    "subtitle": "All the attractions of the provinces of Palermo and Trapani, curated for the guests of Apartment Matteo. Click on the pins for directions.",
+    "back_home": "Back to home",
+    "search_placeholder": "Search attraction, town…",
+    "no_results": "No results",
+    "directions": "→ Directions",
+    "house_popup_title": "Apartment Matteo",
+    "categories": {
+      "art": "Art & culture",
+      "beach": "Beaches",
+      "nature": "Nature & views"
+    },
+    "locked_marker_title": "Locked attraction",
+    "locked_marker_hint": "Unlock with the code to reveal name and details",
+    "unlock_title": "Unlock the attraction names",
+    "unlock_description": "The map is free: explore all the points of interest in the area. Enter your confirmation code to unlock the names, details and directions of each attraction, plus the personalized AI itinerary.",
+    "subtitle_free": "Freely explore all the points in the area. Unlock names and details with the code you receive after booking.",
+    "add_to_itinerary": "Add to my itinerary",
+    "in_itinerary": "In itinerary",
+    "remove": "Remove",
+    "my_itinerary": "My itinerary",
+    "itinerary_count": "attractions",
+    "itinerary_empty": "Tap a point on the map and add it here to build your own itinerary.",
+    "download_pdf": "Download PDF",
+    "clear": "Clear",
+    "traveler_name_ph": "Your name (for the PDF)",
+    "price": "Price",
+    "hours": "Hours",
+    "duration": "Duration",
+    "discount": "Discounts",
+    "tickets": "Tickets",
+    "pdf_error": "Error generating the PDF",
+    "generating": "Generating…",
+    "added_toast": "Added to your itinerary",
+    "build_hint": "Click the points on the map and build your itinerary, then download it as PDF."
+  },
+  "ai_itinerary": {
+    "badge": "Exclusive experience",
+    "title": "Your tailor-made itinerary, created by artificial intelligence",
+    "description": "Once your booking is approved, you will receive a confirmation code. Enter it here to generate a personalized itinerary based on your dates, interests and travel style — with local advice on beaches, traditional restaurants, excursions and Sicilian traditions.",
+    "locked_hint": "Available only after host approval",
+    "form_title": "Generate your itinerary",
+    "code_placeholder": "Confirmation code",
+    "interests_placeholder": "Your interests (e.g. sea, food, history, nature)",
+    "style_placeholder": "Travel style",
+    "style_relax": "Relax and sea",
+    "style_adventure": "Adventure and nature",
+    "style_culture": "Culture and history",
+    "style_food": "Gastronomic",
+    "style_family": "Family",
+    "style_romantic": "Romantic",
+    "generate": "Generate itinerary",
+    "generating": "Generating…",
+    "missing_code": "Please enter the confirmation code",
+    "default_error": "Error generating the itinerary"
+  },
+  "footer": {
+    "address": "Address",
+    "contacts": "Contacts",
+    "app_social": "App & Social",
+    "cir": "CIR:",
+    "cin": "CIN:",
+    "copyright": "© {{year}} Apartment Matteo — Trappeto (PA)"
+  },
+  "souvenir": {
+    "badge": "Free gift",
+    "kicker": "A keepsake to take home",
+    "title": "The Trappeto souvenir keychain",
+    "description": "A little memory of your holiday: the faux-leather keychain with the village of Trappeto and the QR code for the website.",
+    "gift_note": "It's our gift for those who book directly on the website.",
+    "point1": "Exclusive Appartamento Matteo design",
+    "point2": "QR for the site and the AI itinerary",
+    "point3": "Free when you book here, no commissions",
+    "cta": "Book on the site and get it",
+    "widget_text": "A little memory of your holiday: the faux-leather keychain with the village of Trappeto and the QR code for our website + a digital itinerary to discover all the wonders of our area!",
+    "itinerary_note": "You'll also receive a personalized digital itinerary.",
+    "widget_highlight": "Souvenir keychain + digital itinerary"
+  },
+  "map_tutorial": {
+    "badge": "Guest area",
+    "dialog_title": "How the interactive map works",
+    "dialog_subtitle": "With your booking code you unlock all of this:",
+    "prev": "Previous",
+    "next": "Next",
+    "step_aria": "Step",
+    "cta": "Open the map",
+    "mock": {
+      "enter_code": "Enter the code",
+      "unlock": "Unlock",
+      "unlocked": "Unlocked!"
+    },
+    "steps": {
+      "code": {
+        "title": "Enter your code",
+        "desc": "You receive the code by email once your booking is confirmed. Enter it once to unlock the whole map."
+      },
+      "details": {
+        "title": "Discover names and details",
+        "desc": "Every attraction shows its name, opening hours, prices, suggested duration, guest discounts and links to tickets and directions."
+      },
+      "itinerary": {
+        "title": "Build your itinerary",
+        "desc": "Add the places you like with a tap and put together your tailor-made trip, right from the map."
+      },
+      "pdf": {
+        "title": "Download the PDF",
+        "desc": "Export the full itinerary as a PDF, ready to take with you even offline."
+      }
+    },
+    "button": "Watch the tutorial"
+  }
+}

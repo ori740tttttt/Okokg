@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "Home",
+    "map": "Mappa",
+    "apartment": "Appartamento",
+    "itinerary": "Itinerario IA",
+    "login": "Accedi",
+    "logout": "Esci",
+    "dashboard": "Dashboard"
+  },
+  "language": {
+    "select": "Lingua"
+  },
+  "hero": {
+    "kicker": "Trappeto · Sicilia",
+    "title_line1": "Appartamento",
+    "title_line2": "Matteo",
+    "subtitle": "La tua casa fra il mare e la collina. Un soggiorno autentico nel cuore della costa nord-occidentale siciliana."
+  },
+  "booking": {
+    "title": "Verifica disponibilità",
+    "subtitle": "Scegli le date qui o dal calendario",
+    "from": "a partire da",
+    "per_night": "/notte",
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "guests": "Ospiti",
+    "guest_one": "ospite",
+    "guest_other": "ospiti",
+    "discount_code": "Codice sconto",
+    "optional": "Opzionale",
+    "ac": "Aria condizionata",
+    "n_nights": "{{n}} notti × prezzo medio",
+    "extra_guests": "Ospiti extra",
+    "cleaning": "Pulizia finale",
+    "tourist_tax": "Tassa di soggiorno",
+    "per_night_short": "/notte",
+    "per_stay": "soggiorno",
+    "discount_label": "Sconto ({{code}} -{{percent}}%)",
+    "site_total": "Totale sito",
+    "same_stay_booking": "Stesso soggiorno su Booking.com:",
+    "see_on_booking": "Vedi su Booking",
+    "save_here": "Risparmi {{amount}} prenotando qui",
+    "name_placeholder": "Nome e cognome",
+    "email_placeholder": "Email",
+    "phone_placeholder": "Telefono (obbligatorio)",
+    "message_placeholder": "Note (opzionale)",
+    "submit": "Invia richiesta di prenotazione",
+    "sending": "Invio in corso…",
+    "toast_select_dates": "Seleziona le date sul calendario",
+    "toast_need_name_email": "Inserisci nome ed email",
+    "toast_need_phone": "Inserisci un numero di telefono",
+    "toast_sent": "Richiesta inviata! Riceverai conferma via email.",
+    "toast_error": "Errore nell'invio",
+    "toast_date_blocked": "Questa data non è disponibile",
+    "toast_select_checkin_first": "Seleziona prima la data di arrivo",
+    "toast_checkout_after": "La partenza deve essere dopo l'arrivo",
+    "toast_range_blocked": "Nelle date scelte ci sono giorni non disponibili",
+    "confirm_send": "Conferma e invia richiesta",
+    "back": "Indietro"
+  },
+  "calendar": {
+    "kicker": "Calendario",
+    "title": "Disponibilità",
+    "help": "Clicca su due date per selezionare un periodo. Le tariffe giornaliere sono mostrate sotto al giorno.",
+    "available": "Disponibile",
+    "booked": "Occupato",
+    "selected": "Selezionato",
+    "not_available": "Non disponibile",
+    "weekdays": [
+      "L",
+      "M",
+      "M",
+      "G",
+      "V",
+      "S",
+      "D"
+    ]
+  },
+  "property": {
+    "kicker": "L'appartamento",
+    "title": "Casa dei tuoi sogni siciliani",
+    "services": "Servizi inclusi",
+    "feature_rooms": "Camere da letto",
+    "feature_bathrooms": "Bagni",
+    "feature_kitchen": "Cucine",
+    "feature_living": "Salotti",
+    "feature_max_guests": "Ospiti max"
+  },
+  "map_cta": {
+    "kicker": "Mappa interattiva",
+    "title": "Esplora le meraviglie di Palermo e Trapani",
+    "subtitle": "Oltre 50 attrazioni curate: arte e cultura, spiagge da sogno, natura e panorami da non perdere.",
+    "open": "Apri la mappa →"
+  },
+  "map_page": {
+    "kicker": "Esplora",
+    "title": "Mappa delle meraviglie",
+    "subtitle": "Tutte le attrazioni delle province di Palermo e Trapani, curate per gli ospiti di Appartamento Matteo. Clicca sui pin per indicazioni stradali.",
+    "back_home": "Torna alla casa",
+    "search_placeholder": "Cerca attrazione, comune…",
+    "no_results": "Nessun risultato",
+    "directions": "→ Indicazioni",
+    "house_popup_title": "Appartamento Matteo",
+    "categories": {
+      "art": "Arte e cultura",
+      "beach": "Spiagge",
+      "nature": "Natura e panorami"
+    },
+    "locked_marker_title": "Attrazione bloccata",
+    "locked_marker_hint": "Sblocca con il codice per scoprire nome e dettagli",
+    "unlock_title": "Sblocca i nomi delle attrazioni",
+    "unlock_description": "La mappa è libera: esplora tutti i punti d'interesse del territorio. Inserisci il codice di conferma per sbloccare i nomi, i dettagli e le indicazioni di ogni attrazione, oltre all'itinerario IA personalizzato.",
+    "subtitle_free": "Esplora liberamente tutti i punti del territorio. Sblocca i nomi e i dettagli con il codice ricevuto dopo la prenotazione.",
+    "add_to_itinerary": "Aggiungi al mio itinerario",
+    "in_itinerary": "Nell'itinerario",
+    "remove": "Rimuovi",
+    "my_itinerary": "Il mio itinerario",
+    "itinerary_count": "attrazioni",
+    "itinerary_empty": "Tocca un punto sulla mappa e aggiungilo qui per creare il tuo itinerario personale.",
+    "download_pdf": "Scarica PDF",
+    "clear": "Svuota",
+    "traveler_name_ph": "Il tuo nome (per il PDF)",
+    "price": "Prezzo",
+    "hours": "Orari",
+    "duration": "Durata",
+    "discount": "Sconti",
+    "tickets": "Biglietti",
+    "pdf_error": "Errore nella generazione del PDF",
+    "generating": "Generazione…",
+    "added_toast": "Aggiunto al tuo itinerario",
+    "build_hint": "Clicca sui punti della mappa e crea il tuo itinerario, poi scaricalo in PDF."
+  },
+  "ai_itinerary": {
+    "badge": "Esperienza esclusiva",
+    "title": "Il tuo itinerario su misura, creato dall'intelligenza artificiale",
+    "description": "Una volta che la tua prenotazione sarà approvata, riceverai un codice di conferma. Inseriscilo qui per generare un itinerario personalizzato basato sulle tue date, i tuoi interessi e il tuo stile di viaggio — con consigli locali su spiagge, ristoranti tipici, escursioni e tradizioni siciliane.",
+    "locked_hint": "Disponibile solo dopo l'approvazione dell'host",
+    "form_title": "Genera il tuo itinerario",
+    "code_placeholder": "Codice di conferma",
+    "interests_placeholder": "I tuoi interessi (es. mare, cibo, storia, natura)",
+    "style_placeholder": "Stile di viaggio",
+    "style_relax": "Relax e mare",
+    "style_adventure": "Avventura e natura",
+    "style_culture": "Cultura e storia",
+    "style_food": "Gastronomico",
+    "style_family": "In famiglia",
+    "style_romantic": "Romantico",
+    "generate": "Genera itinerario",
+    "generating": "Generazione in corso…",
+    "missing_code": "Inserisci il codice di conferma",
+    "default_error": "Errore nel generare l'itinerario"
+  },
+  "footer": {
+    "address": "Indirizzo",
+    "contacts": "Contatti",
+    "app_social": "App e Social",
+    "cir": "CIR:",
+    "cin": "CIN:",
+    "copyright": "© {{year}} Appartamento Matteo — Trappeto (PA)"
+  },
+  "souvenir": {
+    "badge": "In omaggio",
+    "kicker": "Un ricordo da portare a casa",
+    "title": "Il portachiavi souvenir di Trappeto",
+    "description": "Un piccolo ricordo della tua vacanza: il portachiavi in similpelle con il borgo di Trappeto e il QR per il sito.",
+    "gift_note": "È un nostro omaggio per chi prenota direttamente dal sito.",
+    "point1": "Design esclusivo Appartamento Matteo",
+    "point2": "QR per il sito e l'itinerario IA",
+    "point3": "Gratis prenotando qui, senza commissioni",
+    "cta": "Prenota dal sito e ricevilo",
+    "widget_text": "Un piccolo ricordo della tua vacanza: il portachiavi in similpelle con il borgo di Trappeto e il QR per il nostro sito web + un itinerario digitale per scoprire tutte le meraviglie del nostro territorio!",
+    "itinerary_note": "Riceverai anche un itinerario digitale personalizzato.",
+    "widget_highlight": "Portachiavi souvenir + itinerario digitale"
+  },
+  "map_tutorial": {
+    "badge": "Area ospiti",
+    "dialog_title": "Come funziona la mappa interattiva",
+    "dialog_subtitle": "Con il codice della prenotazione sblocchi tutto questo:",
+    "prev": "Precedente",
+    "next": "Successivo",
+    "step_aria": "Passo",
+    "cta": "Apri la mappa",
+    "mock": {
+      "enter_code": "Inserisci il codice",
+      "unlock": "Sblocca",
+      "unlocked": "Sbloccato!"
+    },
+    "steps": {
+      "code": {
+        "title": "Inserisci il codice",
+        "desc": "Ricevi il codice via email dopo la conferma della prenotazione. Inseriscilo una sola volta per sbloccare l'intera mappa."
+      },
+      "details": {
+        "title": "Scopri nomi e dettagli",
+        "desc": "Ogni attrazione mostra nome, orari, prezzi, durata consigliata, sconti riservati e link a biglietti e indicazioni."
+      },
+      "itinerary": {
+        "title": "Crea il tuo itinerario",
+        "desc": "Aggiungi i luoghi che ti interessano con un tap e componi il tuo viaggio su misura, direttamente dalla mappa."
+      },
+      "pdf": {
+        "title": "Scarica il PDF",
+        "desc": "Esporta l'itinerario completo in PDF, pronto da portare con te anche offline."
+      }
+    },
+    "button": "Guarda il tutorial"
+  }
+}
