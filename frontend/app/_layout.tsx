@@ -10,6 +10,7 @@ import { ErrorBoundary } from "@/src/components/error-boundary";
 import { queryClient } from "@/src/query-client";
 import { AuthProvider } from "@/src/lib/auth";
 import { FavoritesProvider } from "@/src/lib/favorites";
+import { ItineraryProvider } from "@/src/lib/itinerary";
 import { ToastProvider } from "@/src/components/ui";
 import "@/src/i18n";
 
@@ -24,12 +25,14 @@ export default function RootLayout() {
             <QueryClientProvider client={queryClient}>
               <AuthProvider>
                 <FavoritesProvider>
-                  <ToastProvider>
-                    <View style={{ flex: 1, backgroundColor: "#FAF8F5" }}>
-                      <StatusBar style="dark" />
-                      <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: "#FAF8F5" } }} />
-                    </View>
-                  </ToastProvider>
+                  <ItineraryProvider>
+                    <ToastProvider>
+                      <View style={{ flex: 1, backgroundColor: "#FAF8F5" }}>
+                        <StatusBar style="dark" />
+                        <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: "#FAF8F5" } }} />
+                      </View>
+                    </ToastProvider>
+                  </ItineraryProvider>
                 </FavoritesProvider>
               </AuthProvider>
             </QueryClientProvider>

@@ -10,6 +10,8 @@ import { Icon, IconName } from "@/src/components/Icon";
 import { makeStyles, useTheme } from "@/src/theme";
 import { fonts, radius, spacing } from "@/src/lib/typography";
 import { usePois, Poi } from "@/src/lib/queries";
+import { useItinerary } from "@/src/lib/itinerary";
+import { ItineraryFab } from "@/src/components/ItineraryFab";
 
 const CATEGORY_META: Record<string, { icon: IconName; color: (c: any) => string }> = {
   art: { icon: "bank", color: (c) => c.brandPrimary },
@@ -22,6 +24,7 @@ export default function PlacesScreen() {
   const s = useStyles();
   const { colors } = useTheme();
   const pois = usePois();
+  const { has, toggle } = useItinerary();
   const [cat, setCat] = useState("all");
   const [q, setQ] = useState("");
 
@@ -80,8 +83,11 @@ export default function PlacesScreen() {
             </Text>
           ) : null}
         </View>
+        <Pressable testID={`poi-add-${item.id}`} onPress={() => toggle(item.id)} style={[s.dirBtn, has(item.id) && { backgroundColor: colors.brandPrimary }]} hitSlop={8}>
+          <Icon name={has(item.id) ? "playlist-remove" : "playlist-plus"} size={20} color={has(item.id) ? colors.onBrandPrimary : colors.brandPrimary} />
+        </Pressable>
         <Pressable testID={`poi-dir-${item.id}`} onPress={() => openDirections(item)} style={s.dirBtn} hitSlop={8}>
-          <Icon name="directions" size={20} color={colors.brandPrimary} />
+          <Icon name="directions" size={20} color={colors.olive} />
         </Pressable>
       </Pressable>
     );
@@ -108,6 +114,7 @@ export default function PlacesScreen() {
           showsVerticalScrollIndicator={false}
         />
       )}
+      <ItineraryFab />
     </View>
   );
 }

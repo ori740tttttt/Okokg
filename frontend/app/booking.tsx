@@ -144,6 +144,31 @@ export default function BookingScreen() {
           </View>
         </Card>
 
+        {/* Gift / Omaggio */}
+        <Card testID="gift-card" style={s.giftCard}>
+          <View style={s.giftHead}>
+            <View style={s.giftBadge}>
+              <Icon name="gift-outline" size={16} color={colors.onOlive} />
+              <Text style={s.giftBadgeTxt}>IN OMAGGIO</Text>
+            </View>
+            <Text style={s.giftTitle}>Con la tua prenotazione</Text>
+          </View>
+          <View style={s.giftRow}>
+            <Icon name="key-chain" size={20} color={colors.olive} />
+            <View style={{ flex: 1 }}>
+              <Text style={s.giftItemTitle}>Portachiavi souvenir</Text>
+              <Text style={s.giftItemDesc}>Un ricordo siciliano che troverai in casa al tuo arrivo.</Text>
+            </View>
+          </View>
+          <View style={s.giftRow}>
+            <Icon name="map-marker-path" size={20} color={colors.olive} />
+            <View style={{ flex: 1 }}>
+              <Text style={s.giftItemTitle}>Itinerario digitale personalizzato</Text>
+              <Text style={s.giftItemDesc}>Mappa interattiva sbloccata e PDF dei luoghi da non perdere.</Text>
+            </View>
+          </View>
+        </Card>
+
         {/* Discount */}
         <View style={{ marginTop: spacing.md }}>
           <Field value={discount} onChangeText={setDiscount} placeholder={t("booking.discount_code")} icon="ticket-percent-outline" autoCapitalize="characters" testID="discount-code" />
@@ -230,4 +255,12 @@ const useStyles = makeStyles((c) => ({
   totalVal: { color: c.brandPrimary, fontSize: 24, fontFamily: fonts.heading },
   savings: { flexDirection: "row", alignItems: "center", gap: 6, backgroundColor: c.surfaceTertiary, padding: spacing.sm, borderRadius: radius.md },
   savingsTxt: { color: c.success, fontSize: 13, fontWeight: "600", fontFamily: fonts.body },
+  giftCard: { marginTop: spacing.md, backgroundColor: c.surfaceTertiary, borderColor: c.olive, borderWidth: 1, gap: spacing.sm },
+  giftHead: { gap: 6 },
+  giftBadge: { flexDirection: "row", alignItems: "center", gap: 6, alignSelf: "flex-start", backgroundColor: c.olive, borderRadius: radius.pill, paddingHorizontal: 10, paddingVertical: 4 },
+  giftBadgeTxt: { color: c.onOlive, fontSize: 11, fontWeight: "700", letterSpacing: 1.2, fontFamily: fonts.body },
+  giftTitle: { color: c.onSurface, fontSize: 17, fontFamily: fonts.heading },
+  giftRow: { flexDirection: "row", alignItems: "flex-start", gap: spacing.sm },
+  giftItemTitle: { color: c.onSurface, fontSize: 14, fontFamily: fonts.body, fontWeight: "600" },
+  giftItemDesc: { color: c.onSurfaceSecondary, fontSize: 13, fontFamily: fonts.body, lineHeight: 18, marginTop: 1 },
 }));

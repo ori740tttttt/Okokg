@@ -117,6 +117,14 @@ export default function InfoScreen() {
         {/* Contacts */}
         <Text style={s.sectionTitle}>{t("footer.contacts")}</Text>
         <Card style={{ gap: spacing.sm }}>
+          <Pressable testID="contact-phone" style={s.contactRow} onPress={() => Linking.openURL("tel:+393881611514")}>
+            <Icon name="phone" size={20} color={colors.olive} />
+            <Text style={s.contactTxt}>+39 388 161 1514</Text>
+          </Pressable>
+          <Pressable testID="contact-whatsapp" style={s.contactRow} onPress={() => Linking.openURL("https://wa.me/393881611514")}>
+            <Icon name="whatsapp" size={20} color={colors.olive} />
+            <Text style={s.contactTxt}>WhatsApp: +39 388 161 1514</Text>
+          </Pressable>
           <Pressable style={s.contactRow} onPress={() => Linking.openURL("mailto:info@appartamentomatteo.it")}>
             <Icon name="email-outline" size={20} color={colors.olive} />
             <Text style={s.contactTxt}>info@appartamentomatteo.it</Text>
@@ -126,6 +134,26 @@ export default function InfoScreen() {
             <Text style={s.contactTxt}>Trappeto (PA), Sicilia</Text>
           </View>
           <Text style={s.copyright}>{t("footer.copyright", { year: new Date().getFullYear() })}</Text>
+        </Card>
+
+        {/* Codici struttura */}
+        <Text style={s.sectionTitle}>Codici struttura</Text>
+        <Card style={{ gap: spacing.sm }}>
+          <View style={s.codeRow}>
+            <View>
+              <Text style={s.codeLabel}>CIN · Codice Identificativo Nazionale</Text>
+              <Text style={s.codeVal} testID="cin-value">IT082074C2NA6HPQMB</Text>
+            </View>
+            <Icon name="shield-check-outline" size={20} color={colors.olive} />
+          </View>
+          <View style={s.divider} />
+          <View style={s.codeRow}>
+            <View>
+              <Text style={s.codeLabel}>CIR · Codice Identificativo Regionale</Text>
+              <Text style={s.codeVal} testID="cir-value">19082074C252260</Text>
+            </View>
+            <Icon name="certificate-outline" size={20} color={colors.olive} />
+          </View>
         </Card>
       </ScrollView>
     </View>
@@ -143,5 +171,9 @@ const useStyles = makeStyles((c) => ({
   faqA: { color: c.onSurfaceSecondary, fontSize: 14, lineHeight: 21, marginTop: spacing.sm, fontFamily: fonts.body },
   contactRow: { flexDirection: "row", alignItems: "center", gap: spacing.sm },
   contactTxt: { color: c.onSurface, fontSize: 15, fontFamily: fonts.body },
+  codeRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: spacing.sm },
+  codeLabel: { color: c.muted, fontSize: 11, fontFamily: fonts.body, letterSpacing: 0.5 },
+  codeVal: { color: c.onSurface, fontSize: 16, fontFamily: fonts.heading, marginTop: 2, letterSpacing: 0.5 },
+  divider: { height: 1, backgroundColor: c.divider },
   copyright: { color: c.muted, fontSize: 12, fontFamily: fonts.body, marginTop: spacing.sm },
 }));

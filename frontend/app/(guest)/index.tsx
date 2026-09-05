@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { ScrollView, View, Text, Pressable, RefreshControl } from "react-native";
+import { ScrollView, View, Text, Pressable, RefreshControl, Modal } from "react-native";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { Calendar } from "react-native-calendars";
@@ -14,7 +14,7 @@ import { Icon, IconName } from "@/src/components/Icon";
 import { makeStyles, useTheme } from "@/src/theme";
 import { fonts, radius, spacing } from "@/src/lib/typography";
 import { useProperty, usePhotos, useAvailability } from "@/src/lib/queries";
-import { festivalDateSet, upcomingFestivals } from "@/src/lib/festivals";
+import { festivalDateSet, upcomingFestivals, Festival } from "@/src/lib/festivals";
 import { euro, toISODate, nightsBetween } from "@/src/lib/format";
 
 const HERO_IMG =
@@ -31,6 +31,7 @@ export default function HomeScreen() {
   const availability = useAvailability();
 
   const [range, setRange] = useState<{ start: string | null; end: string | null }>({ start: null, end: null });
+  const [festPopup, setFestPopup] = useState<Festival[] | null>(null);
 
   const av = availability.data;
   const blocked = useMemo(() => new Set(av?.blocked_dates ?? []), [av]);
@@ -80,8 +81,7 @@ export default function HomeScreen() {
 
   const nextFestivals = useMemo(() => upcomingFestivals().slice(0, 3), []);
 
-  const onDayPress = (day: { dateString: string }) => {
-    const d = day.dateString;
+  const selectDay = (d: string) => {
     if (blocked.has(d)) return;
     if (!range.start || (range.start && range.end)) {
       setRange({ start: d, end: null });
@@ -90,6 +90,16 @@ export default function HomeScreen() {
     } else {
       setRange({ start: d, end: null });
     }
+  };
+
+  const onDayPress = (day: { dateString: string }) => {
+    const d = day.dateString;
+    const fests = festMap[d];
+    if (fests && fests.length > 0) {
+      setFestPopup(fests);
+      return;
+    }
+    selectDay(d);
   };
 
   const nights = nightsBetween(range.start, range.end);
@@ -304,6 +314,57 @@ export default function HomeScreen() {
           </Pressable>
         </View>
       </ScrollView>
+
+      {/* Festival popup */}
+      <Modal visible={!!festPopup} transparent animationType="fade" onRequestClose={() => setFestPopup(null)}>
+        <Pressable style={s.festBackdrop} onPress={() => setFestPopup(null)}>
+          <Pressable style={s.festSheet} onPress={(e) => e.stopPropagation()}>
+            <ScrollView showsVerticalScrollIndicator={false}>
+              {(festPopup ?? []).map((f) => (
+                <View key={f.id} style={s.festItem} testID={`fest-popup-${f.id}`}>
+                  <View style={s.festHead}>
+                    <Text style={s.fpGlyph}>{f.icon}</Text>
+                    <View style={{ flex: 1 }}>
+                      <Text style={s.fpName}>{f.name}</Text>
+                      <View style={s.festMetaRow}>
+                        <Icon name="map-marker" size={13} color={colors.olive} />
+                        <Text style={s.festPlace}>{f.place} ({f.province})</Text>
+                      </View>
+                    </View>
+                  </View>
+                  <View style={s.festDateBox}>
+                    <Icon name="calendar-star" size={15} color={colors.brandPrimary} />
+                    <Text style={s.festDateTxt}>{f.dateLabel}</Text>
+                  </View>
+                  <Text style={s.festDesc}>{f.description}</Text>
+                  <View style={s.festCuriosity}>
+                    <Icon name="information-outline" size={15} color={colors.brand} />
+                    <Text style={s.festCuriosityTxt}>{f.curiosity}</Text>
+                  </View>
+                </View>
+              ))}
+              <View style={{ flexDirection: "row", gap: spacing.sm, marginTop: spacing.sm }}>
+                <View style={{ flex: 1 }}>
+                  <Button
+                    testID="fest-popup-select"
+                    label="Usa questa data"
+                    icon="calendar-check"
+                    variant="olive"
+                    onPress={() => {
+                      const d = festPopup?.[0]?.start;
+                      setFestPopup(null);
+                      if (d) selectDay(d);
+                    }}
+                  />
+                </View>
+                <View style={{ flex: 1 }}>
+                  <Button testID="fest-popup-all" label="Tutte le feste" icon="calendar-star" onPress={() => { setFestPopup(null); router.push("/festivals"); }} />
+                </View>
+              </View>
+            </ScrollView>
+          </Pressable>
+        </Pressable>
+      </Modal>
     </View>
   );
 }
@@ -320,6 +381,19 @@ function Legend({ color, label }: { color: string; label: string }) {
 
 const useStyles = makeStyles((c) => ({
   screen: { flex: 1, backgroundColor: c.surface },
+  festBackdrop: { flex: 1, backgroundColor: "rgba(44,42,40,0.5)", justifyContent: "center", padding: spacing.lg },
+  festSheet: { backgroundColor: c.surfaceSecondary, borderRadius: radius.lg, padding: spacing.lg, maxHeight: "80%" },
+  festItem: { marginBottom: spacing.md, gap: spacing.sm },
+  festHead: { flexDirection: "row", gap: spacing.sm, alignItems: "center" },
+  fpGlyph: { fontSize: 30 },
+  fpName: { color: c.onSurface, fontSize: 18, fontFamily: fonts.heading, lineHeight: 21 },
+  festMetaRow: { flexDirection: "row", alignItems: "center", gap: 4, marginTop: 2 },
+  festPlace: { color: c.muted, fontSize: 12, fontFamily: fonts.body },
+  festDateBox: { flexDirection: "row", alignItems: "center", gap: 6, backgroundColor: c.terracottaSoft, paddingHorizontal: spacing.sm, paddingVertical: 7, borderRadius: radius.md, alignSelf: "flex-start" },
+  festDateTxt: { color: c.brandPrimary, fontSize: 13, fontWeight: "700", fontFamily: fonts.body },
+  festDesc: { color: c.onSurfaceSecondary, fontSize: 14, lineHeight: 20, fontFamily: fonts.body },
+  festCuriosity: { flexDirection: "row", gap: 6, backgroundColor: c.surfaceTertiary, padding: spacing.sm, borderRadius: radius.md },
+  festCuriosityTxt: { color: c.onSurfaceSecondary, fontSize: 13, lineHeight: 18, flex: 1, fontStyle: "italic", fontFamily: fonts.body },
   hero: { height: 340, backgroundColor: c.surfaceInverse },
   heroImg: { width: "100%", height: "100%" },
   heroOverlay: { position: "absolute", left: 0, right: 0, bottom: 0, top: 0 },
